@@ -20,18 +20,18 @@ The Watermark plugin comes with a set of customizable settings, allowing users t
 
 2. **Path to the Watermark Image**:
    ```plaintext
-   NANO2_WATERMARK_WATERMARK_PATH = null
+   NANO2_WATERMARK_PATH = null
       # or
-   NANO2_WATERMARK_WATERMARK_PATH = '$/nano2/watermark/assets/images/logo.png'
+   NANO2_WATERMARK_PATH = '$/nano2/watermark/assets/images/logo.png'
    # or
-   NANO2_WATERMARK_WATERMARK_PATH = 'plugins/nano2/watermark/assets/images/logo.png'
+   NANO2_WATERMARK_PATH = 'plugins/nano2/watermark/assets/images/logo.png'
    ```
    - Here you can specify the path to the watermark image. If a path is not provided, the site logo will be used by default.
    - If a path for the logo image is not set, the image will be taken from `\Backend\Models\BrandSetting::getLogo()`.
 
 3. **Watermark Position**:
    ```plaintext
-   NANO2_WATERMARK_WATERMARK_POSITION = 'bottom-left'
+   NANO2_WATERMARK_POSITION = 'bottom-left'
    ```
    - This setting is used to define the position of the watermark on the image. Available options include:
      - `bottom-left`
@@ -41,49 +41,49 @@ The Watermark plugin comes with a set of customizable settings, allowing users t
 
 4. **Custom Width for the Logo**:
    ```plaintext
-   NANO2_WATERMARK_WATERMARK_WIDTH = null
+   NANO2_WATERMARK_WIDTH = null
    ```
    - You can specify the width of the watermark here. If the value is `null`, the default width will be used.
 
 5. **Custom Height for the Logo**:
    ```plaintext
-   NANO2_WATERMARK_WATERMARK_HEIGHT = null
+   NANO2_WATERMARK_HEIGHT = null
    ```
    - Similar to width, you can specify the height of the watermark. The default value will be used if it is `null`.
 
 6. **Resize Logo Dimensions as a Percentage**:
    ```plaintext
-   NANO2_WATERMARK_WATERMARK_RESIZE_PERCENTAGE = null
+   NANO2_WATERMARK_RESIZE_PERCENTAGE = null
    ```
    - If you wish to adjust the dimensions of the watermark based on a percentage of the original image, you can enter the percentage here (e.g., `10` or `15`).
 
 7. **Overlay Watermark on Original Image**:
    ```plaintext
-   NANO2_WATERMARK_WATERMARK_OVERWRITE_ORIGNAL = true
+   NANO2_WATERMARK_OVERWRITE_ORIGNAL = true
    ```
    - If the value is `true`, the watermark will be written onto the original image. To create a new file with the watermark, change the value to `false`.
 
 8. **Path for the Created Image File**:
    ```plaintext
-   NANO2_WATERMARK_WATERMARK_NEW_PATH = null
+   NANO2_WATERMARK_NEW_PATH = null
    ```
    - You can specify a path to save the new image with the watermark. If it is `null`, the default path will be used.
 
 9. **Check if the Image Already Has a Watermark**:
    ```plaintext
-   NANO2_WATERMARK_WATERMARK_CHECK_EXISTS = true
+   NANO2_WATERMARK_CHECK_EXISTS = true
    ```
    - This setting determines whether to check the image for a pre-existing watermark before adding a new one.
 
 10. **Write to Image Metadata**:
     ```plaintext
-    NANO2_WATERMARK_WATERMARK_IS_WRITE_EXIF = true
+    NANO2_WATERMARK_IS_WRITE_EXIF = true
     ```
     - If the value is `true`, information will be written in the image's EXIF data indicating that a watermark has been added.
 
 11. **Allowed Image Fields for Watermarking**:
     ```plaintext
-    NANO2_WATERMARK_WATERMARK_ALLOW_FIELD = 'image,images,avatar'
+    NANO2_WATERMARK_ALLOW_FIELD = 'image,images,avatar'
     ```
     - You can specify which fields are permitted to have a watermark added, such as `image`, `images`, and `avatar`.
     - To allow all fields, use `*`.
