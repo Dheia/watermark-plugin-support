@@ -22,8 +22,13 @@
 2. **مسار صورة العلامة المائية**:
    ```plaintext
    NANO2_WATERMARK_WATERMARK_PATH = null
+   # or
+   NANO2_WATERMARK_WATERMARK_PATH = '$/nano2/watermark/assets/images/logo.png'
+   # or
+   NANO2_WATERMARK_WATERMARK_PATH = 'plugins/nano2/watermark/assets/images/logo.png'
    ```
    - هنا يمكنك تحديد مسار صورة العلامة المائية. إذا لم يتم توفير مسار، سيتم اعتماد شعار الموقع افتراضيًا.
+   - في حال عدم وضع مسار لصورة الشعار سيتم اخذ الصورة من `\Backend\Models\BrandSetting::getLogo()` 
 
 3. **موضع العلامة المائية**:
    ```plaintext
@@ -167,4 +172,8 @@
 3. **تنفيذ العملية**: بعد تحديد الخيارات المطلوبة، يمكنك استدعاء الدالة المناسبة لإضافة العلامة المائية.
 
 باستخدام `WatermarkHelper`، يصبح من السهل ضمان حماية الصور بشكل فعال، مما يسهم في تعزيز جودة المحتوى المقدم على الموقع ويزيد من احترافية العلامة التجارية.
+
+# Documentation or Support
+
+https://github.com/Dheia/watermark-plugin-support
 

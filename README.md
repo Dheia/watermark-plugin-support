@@ -21,8 +21,13 @@ The Watermark plugin comes with a set of customizable settings, allowing users t
 2. **Path to the Watermark Image**:
    ```plaintext
    NANO2_WATERMARK_WATERMARK_PATH = null
+      # or
+   NANO2_WATERMARK_WATERMARK_PATH = '$/nano2/watermark/assets/images/logo.png'
+   # or
+   NANO2_WATERMARK_WATERMARK_PATH = 'plugins/nano2/watermark/assets/images/logo.png'
    ```
    - Here you can specify the path to the watermark image. If a path is not provided, the site logo will be used by default.
+   - If a path for the logo image is not set, the image will be taken from `\Backend\Models\BrandSetting::getLogo()`.
 
 3. **Watermark Position**:
    ```plaintext
@@ -164,3 +169,7 @@ To add a watermark using `WatermarkHelper`, you can follow these steps:
 3. **Execute the Operation**: After specifying the required options, you can call the appropriate function to add the watermark.
 
 Using `WatermarkHelper`, it becomes easy to effectively protect images, contributing to the enhancement of the quality of content presented on the site and increasing the professionalism of the brand.
+
+# Documentation or Support
+
+https://github.com/Dheia/watermark-plugin-support
